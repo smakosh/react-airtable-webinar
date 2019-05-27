@@ -1,11 +1,7 @@
-# Building static & dynamic apps with Gatsby
+# Gatsby meets Airtable webinar
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/abf61440-a775-497b-b59c-5eed3f93bde6/deploy-status)](https://app.netlify.com/sites/building-apps-with-gatsby/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8d4d5b2d-3d4c-479c-a8ef-eac96b70f55d/deploy-status)](https://app.netlify.com/sites/react-airtable-webinar/deploys)
 
-Slide deck for my recent talk about building static & dynamic apps with Gatsby
-
-// Add link for the Gatsby blog
-[Gatsby App](https://github.com/smakosh/gatsby-app-starter-rest-api)
-[REST API](https://github.com/smakosh/not-todo-api)
+Slide deck for my recent webinar about building static & dynamic apps with Gatsby & Airtable
 
 Built with [mdx-check](https://github.com/jxnblk/mdx-deck)
