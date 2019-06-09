@@ -74,11 +74,9 @@ import Sponsor from "./components/Sponsor";
 
 ---
 
-Building a working, blazing fast and quick mvp with state of the art tech tools
+### This Webinar is about
 
----
-
-<Image src="https://i.imgur.com/4TX9hXn.jpg" />
+Building a working, blazing fast and quick mvp with state of the art and easy to use tech tools
 
 ---
 
@@ -127,7 +125,7 @@ Our 3 options:
 
 export default Invert;
 
-### So What's Gatsby and why is the right choice?
+### So What's Gatsby and why is it the right choice?
 
 ---
 
@@ -142,6 +140,7 @@ export default Invert;
   <li>
     Navigates between pages with pushState just like a SPA using @reach/router
   </li>
+  <li>Lets you build Static & Dynamic apps quickly.</li>
 </ul>
 
 ---
@@ -222,7 +221,7 @@ export default Invert;
     <ul>
       <li>
         Gets the content (if there is any) from your files or platforms such as
-        Airtable Contentful/Wordpress etc...
+        Airtable, Contentful, Wordpress etc...
       </li>
     </ul>
   </Item>
@@ -243,6 +242,8 @@ export default Invert;
 
 ### Page & Static queries
 
+Yup, Gatsby has an internal GraphQL API built in
+
 ---
 
 ##### Gatsby has templates, pages & components
@@ -250,10 +251,10 @@ export default Invert;
 <ul style={{ textAlign: "left" }}>
   <li>
     Page queries do accept variables via pageContext in gatsby-config but can
-    only be added to page components & templates (templates === pages).
+    only be added to page components & templates (meaning that templates are basically pages that get generated during build time).
   </li>
   <br />
-  <li>Static queries do not accept variables and can be used on components.</li>
+  <li>Static queries do not accept variables and are meant to be used on components.</li>
 </ul>
 
 ---
@@ -298,6 +299,67 @@ Airtable is simply a better Google spreadsheet that can be used like an admin pa
 
 ---
 
+### Bases
+
+What are Airtable bases and how to query them?
+
+---
+
+### There is always a Gatsby plugin
+
+Exploring Gatsby source Airtable
+
+---
+
+### Different approaches to interact with Airtable API
+
+1. Using the source plugin, you can fetch the content during build time but you cannot perform any CRUD operation
+2. Sending requests directly to the API to perform CRUD operations
+
+---
+
+### Approach 1
+
+<Flex>
+  <Item width="50">
+    <h4>Pros</h4>
+    <ul>
+      <li>The content is static and no request to the API will be performed on run time.</li>
+      <li>The API key is not exposed to the client.</li>
+      <li>Fast as it's static</li>
+      <li>Cheap as all the requests will be performed only when you re-deploy your website.</li>
+      </ul>
+  </Item>
+  <Item width="50">
+    <h4>Cons</h4>
+    <ul>
+      <li>No CRUD operations</li>
+      <li>Not Suitable for few use cases</li>
+    </ul>
+  </Item>
+</Flex>
+
+---
+
+### Approach 2
+
+<Flex>
+  <Item width="50">
+    <h4>Pros</h4>
+    <ul>
+      <li>Basically the cons of Approach 1</li>
+     </ul>
+  </Item>
+  <Item width="50">
+    <h4>Cons</h4>
+    <ul>
+      <li>Your API key gets exposed to the client, there are workarounds to avoid this though.</li>
+    </ul>
+  </Item>
+</Flex>
+
+---
+
 ### Demo time: Videography app
 
 - Gatsby app with static/dynamic content
@@ -322,6 +384,6 @@ export default Invert;
 
 ### links
 
-- Slides: https://github.com/smakosh/
-- Gatsby app: https://github.com/smakosh/
-- CRA app: https://github.com/smakosh/
+- Slides: https://gatsby-airtable-webinar.smakosh.com/
+- Gatsby app: https://github.com/smakosh/gatsby-airtable-starter
+- CRA app: https://github.com/smakosh/CRA-Airtable
